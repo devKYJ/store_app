@@ -35,7 +35,7 @@ class StorePage extends StatelessWidget {
                   Text("Kids", style: TextStyle(fontWeight: FontWeight.bold)),
                   Spacer(),
                   Text("Shoes", style: TextStyle(fontWeight: FontWeight.bold)),
-                  Spacer(), //ddcc
+                  Spacer(),
                   Text("Bag", style: TextStyle(fontWeight: FontWeight.bold)),
                 ],
               ),
