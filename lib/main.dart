@@ -5,7 +5,7 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  const MyApp({Key?key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -21,7 +21,7 @@ class StorePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return  Scaffold(
       body: SafeArea(
         child: Column(
           children: [
@@ -40,7 +40,9 @@ class StorePage extends StatelessWidget {
                 ],
               ),
             ),
-            // Expanded(child: Image.asset("assets/bag.jpeg", fit: BoxFit.cover)),//주석 해제하면 오류남.
+            Expanded(child: Image.asset("assets/bag.jpeg", fit: BoxFit.cover)),//const 오류 어떻게 했는지 모르겠음..
+            const SizedBox(height:5),
+            Expanded(child: Image.asset("assets/cloth.jpeg", fit: BoxFit.cover)),//const 오류 어떻게 했는지 모르겠음..
           ],
         ),
       ),
