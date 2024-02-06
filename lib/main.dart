@@ -40,6 +40,7 @@ class StorePage extends StatelessWidget {
                 ],
               ),
             ),
+            // Expanded(child: Image.asset("assets/bag.jpeg", fit: BoxFit.cover)),//주석 해제하면 오류남.
           ],
         ),
       ),
